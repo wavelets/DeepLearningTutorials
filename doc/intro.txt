@@ -19,41 +19,22 @@ For more about deep learning algorithms, see for example:
  - Geoff Hinton has `readings <http://www.cs.toronto.edu/~hinton/deeprefs.html>`_ from last year's `NIPS tutorial <http://videolectures.net/jul09_hinton_deeplearn/>`_.
 
 The tutorials presented here will introduce you to some of the most important deep learning
-algorithms and will also show you how to run them using Theano_. Theano is a python library that makes writing deep learning models easy, and gives the option of
+algorithms and will also show you how to run them using Torch_. Torch is a Lua library that makes writing deep learning models easy, and gives the option of
 training them on a GPU.
 
-The algorithm tutorials have some prerequisites.  You should know some python,
-and be familiar with numpy. Since this tutorial is about using Theano, you
-should read over the `Theano basic tutorial`_ first.  Once you've done that,
+The algorithm tutorials have some prerequisites.  You should know some Lua,
+and be familiar with Torch Tensors. Since this tutorial is about using Torch, you
+should read over the `Torch basic tutorial`_ first.  Once you've done that,
 read through our :ref:`gettingstarted` chapter -- it introduces the notation, and [downloadable] datasets used in the algorithm tutorials, and the way we do optimization by stochastic gradient descent.  
 
 The purely supervised learning algorithms are meant to be read in order:
 
-  #. :ref:`Logistic Regression <logreg>` - using Theano for something simple
+  #. :ref:`Logistic Regression <logreg>` - using Torch for something simple
   #. :ref:`Multilayer perceptron <mlp>` - introduction to layers
   #. :ref:`Deep Convolutional Network <lenet>` - a simplified version of LeNet5
 
-The unsupervised and semi-supervised learning algorithms can be read in any
-order (the auto-encoders can be read independently of the RBM/DBN thread):
 
-  * :ref:`Auto Encoders, Denoising Autoencoders <daa>` - description of autoencoders
-  * :ref:`Stacked Denoising Auto-Encoders <SdA>` - easy steps into unsupervised pre-training for deep nets
-  * :ref:`Restricted Boltzmann Machines <rbm>` - single layer generative RBM model
-  * :ref:`Deep Belief Networks <DBN>` - unsupervised generative pre-training of stacked RBMs followed by supervised fine-tuning
+.. _Torch: http://deeplearning.net/software/torch
 
-Building towards including the mcRBM model, we have a new tutorial on sampling
-from energy models:
+.. _Torch basic tutorial: http://deeplearning.net/software/torch/tutorial
 
-  * :ref:`HMC Sampling <HMC>` - hybrid (aka Hamiltonian) Monte-Carlo sampling with scan()
-
-Building towards including the Contractive auto-encoders tutorial, we have the code for now:
-  * `Contractive auto-encoders`_ code - There is some basic doc in the code.
-
-Energy-based recurrent neural network (RNN-RBM):
-  * :ref:`Modeling and generating sequences of polyphonic music <rnnrbm>`
-
-.. _Theano: http://deeplearning.net/software/theano
-
-.. _Theano basic tutorial: http://deeplearning.net/software/theano/tutorial
-
-.. _Contractive auto-encoders: https://github.com/lisa-lab/DeepLearningTutorials/blob/master/code/cA.py
