@@ -25,7 +25,7 @@ Project Layout
 
 Subdirectories:
 
-- code - Python files corresponding to each tutorial
+- code - Lua files corresponding to each tutorial
 - data - data and scripts to download data that is used by the tutorials
 - doc  - restructured text used by Sphinx to build the tutorial website
 - html - built automatically by doc/Makefile, contains tutorial website
